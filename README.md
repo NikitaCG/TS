@@ -1,4 +1,4 @@
-# React + TS
+# React + Redux + Roter + TS 
 
 
-### TODO: Redux, Router
+### TODO: Action, Reducers

@@ -50,13 +50,16 @@ module.exports = (env, options) => {
 				},
 				{
 					test: /\.(sa|sc|c)ss$/,
+					// exclude: /node_modules/,
 					use: [
 						MiniCssExtractPlugin.loader,
 						{
-							loader: 'css-loader',
+							loader: 'typings-for-css-modules-loader',
 							options: {
 								sourceMap: true,
 								modules: true,
+								namedExport:true,
+								camelCase:true,
 								localIdentName: '[local]___[hash:base64:5]',
 							},
 						},
@@ -86,7 +89,7 @@ module.exports = (env, options) => {
 			hot: true,
 			// contentBase: 'src/',
 			// publicPath: 'public/',
-			inline: true,
+			// inline: true,
 			port: 8555,
 		},
 

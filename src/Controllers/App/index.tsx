@@ -2,6 +2,8 @@ import * as React from "react";
 
 import IAppState from './IApp';
 
+import * as mainStyles from '../../styles/main.scss';
+
 
 class App extends React.Component<{}, IAppState>{
     public state: IAppState ;
@@ -14,8 +16,8 @@ class App extends React.Component<{}, IAppState>{
 
     public render(){
         return(
-            <div>
-                {this.state.age}
+            <div className={`${mainStyles.grid__container} container col-8`}>
+                {this.state.age}f
             </div>
         );
     }
