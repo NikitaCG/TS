@@ -1,5 +1,5 @@
 import {applyMiddleware, createStore} from 'redux';
-import { Action, Dispatch, Middleware, Store } from 'redux';
+import { Middleware, Store } from 'redux';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {createLogger} from 'redux-logger';
 import thunk from 'redux-thunk';

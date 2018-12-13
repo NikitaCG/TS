@@ -8,7 +8,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
-import { Action, Dispatch, Middleware, Store } from 'redux';
+import { Middleware, Store } from 'redux';
 import Routing from './routes/index';
 // import './styles/main.scss';
 import AppStore from './store/index';

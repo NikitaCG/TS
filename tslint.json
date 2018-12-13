@@ -12,7 +12,9 @@
     "no-console": false,
     "one-line": false,
     "no-consecutive-blank-lines": false,
-    "curly": false
+    "curly": false,
+    "variable-name": false,
+    "object-literal-sort-keys": [true, "ignore-case", "match-declaration-order", "shorthand-first"]
   },
   "rulesDirectory": []
 }
