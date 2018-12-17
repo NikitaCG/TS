@@ -14,7 +14,7 @@
     "no-consecutive-blank-lines": false,
     "curly": false,
     "variable-name": false,
-    "object-literal-sort-keys": [true, "ignore-case", "match-declaration-order", "shorthand-first"]
+    "object-literal-sort-keys": [false, "ignore-case", "match-declaration-order", "shorthand-first"]
   },
   "rulesDirectory": []
 }
