@@ -90,6 +90,7 @@ module.exports = (env, options) => {
 			// contentBase: 'src/',
 			// publicPath: 'public/',
 			// inline: true,
+			host: '0.0.0.0',
 			port: 8555,
 		},
 
