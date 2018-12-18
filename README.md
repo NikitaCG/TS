@@ -1,6 +1,6 @@
 # React + Redux + Router + TS 
 
-##### TODO: package in docker
+##### TODO: any
 
 ## Build
 
