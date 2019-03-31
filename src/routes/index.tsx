@@ -9,6 +9,7 @@ import App from '../Controllers/App/index';
 // import Grid from './Containers/GridExample/index';
 
 const Testing = React.lazy(() => import('../Controllers/Testing/index'));
+const HooksTest = React.lazy(() => import('../Controllers/HooksTest/index'));
 
 class Router extends React.Component {
     public render() {
@@ -26,9 +27,18 @@ class Router extends React.Component {
                         </Suspense>
                     )}
                 />
+                <Route
+                    path="/hooks"
+                    render={() => (
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <HooksTest />
+                        </Suspense>
+                        )}
+                />
             </div>
-        );
+        ); 
     }
 }
 
 export default Router;
+;

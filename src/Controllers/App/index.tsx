@@ -6,8 +6,6 @@ import * as mainStyles from '../../styles/main.scss';
 import IAppState from './IApp';
 
 
-
-
 class App extends React.Component<{}, IAppState>{
     constructor(props){
         super(props);
@@ -18,12 +16,17 @@ class App extends React.Component<{}, IAppState>{
 
     public render(){
         return(
-            <div className={`${mainStyles.grid__container} container col-8`}>
-                <Link  to='/testing' >
-                    go to test
-                </Link>
-                {this.state.age}
-            </div>
+            <>
+                <div className={`${mainStyles.grid__container} container col-8`}>
+                    <Link  to='/testing' >
+                        go to test
+                    </Link>
+                    {this.state.age}
+                    <Link  to='/hooks' >
+                        go to hooks
+                    </Link>
+                </div>
+            </>
         );
     }
 }

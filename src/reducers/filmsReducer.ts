@@ -11,7 +11,6 @@ interface IDataAction {
     data: string[];
 }
 
-
 export default function films(state = {}, action: IFilm) {
     switch (action.type) {
         case filmsConstant.LOAD_COMEDY:
@@ -19,7 +18,6 @@ export default function films(state = {}, action: IFilm) {
 
         case filmsConstant.LOAD_CRIMINAL:
             return action.data;
-
 
         default: return state;
     }

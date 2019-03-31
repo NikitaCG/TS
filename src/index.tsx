@@ -3,7 +3,7 @@
 // import 'bootstrap/dist/css/bootstrap.min.css';
 //чтобы подключить bootstrap через webpack нужно в css-loader убрать hash в local name
 import {History} from 'history';
-import createHistory from 'history/createBrowserHistory';
+import { createBrowserHistory } from 'history';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -13,10 +13,7 @@ import Routing from './routes/index';
 // import './styles/main.scss';
 import AppStore from './store/index';
 
-
-
-
-const history: History = createHistory();
+const history: History = createBrowserHistory();
 
 const middleware: Middleware = routerMiddleware(history);
 
