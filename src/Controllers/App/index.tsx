@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from 'react-router-dom';
-import * as mainStyles from '../../styles/main.scss';
+import * as style from '../../styles/main.css';
 
 //interface
 import IAppState from './IApp';
@@ -15,9 +15,10 @@ class App extends React.Component<{}, IAppState>{
     }
 
     public render(){
+
         return(
             <>
-                <div className={`${mainStyles.grid__container} container col-8`}>
+                <div className={`${style.grid__container} container col-8`}>
                     <Link  to='/testing' >
                         go to test
                     </Link>

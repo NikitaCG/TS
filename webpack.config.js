@@ -33,8 +33,8 @@ module.exports = (env, options) => {
 					},
 				},
 				{
-					test: /\.tsx?$/,
-					loader: "awesome-typescript-loader",
+					test: /\.(ts|tsx)$/,
+					loader: "ts-loader",
 					exclude: /node_modules/,
 				},
 				{
@@ -47,23 +47,19 @@ module.exports = (env, options) => {
 					],
 				},
 				{
-					test: /\.(sa|sc|c)ss$/,
+					test: /\.css$/,
 					// exclude: /node_modules/,
 					use: [
 						MiniCssExtractPlugin.loader,
 						{
-							loader: "typings-for-css-modules-loader",
+							loader: "css-loader",
 							options: {
-								sourceMap: true,
 								modules: true,
-								namedExport: true,
-								camelCase: true,
+								importLoaders: 1,
+								sourceMap: true,
+								minimize: true,
 								localIdentName: "[local]___[hash:base64:5]",
 							},
-						},
-						{
-							loader: "sass-loader",
-							options: { sourceMap: true },
 						},
 					],
 				},

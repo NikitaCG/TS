@@ -7,10 +7,6 @@ import thunk from 'redux-thunk';
 
 import AppReducer from '../reducers/index';
 
-
-
-
-
 const AppStore = (middleware: Middleware): Store =>  {
     // создаем хранище
     const store = createStore(
