@@ -62,7 +62,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "history": "^4.7.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "normalize-scss": "^7.0.1",
     "nyc": "^13.3.0",
     "popper.js": "^1.14.6",
